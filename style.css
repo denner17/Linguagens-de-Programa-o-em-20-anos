@@ -1,0 +1,371 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'mainfont';
+    src: url(fonts/lemon_milk/LEMONMILK-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right,#004AAD, #CB6CE6);
+
+    font-family: sans-serif;
+}
+
+
+header{
+    background-color: #000;
+    height: 130px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo{
+    transition: 1s;
+
+    border-radius: 50px;
+}
+
+header .logo:hover{
+    box-shadow: 5px 1px 10px #FFDE59;
+}
+
+header a{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+
+    font-family: 'mainfont';
+
+    transition: 1s;
+}
+
+header a:hover{
+    color: #FFDE59;
+
+    
+}
+
+
+
+
+
+
+/*----------------MAIN----------------*/
+
+
+h1{
+    font-size: 70px;
+
+    margin: 90px 30px 0px 90px;
+
+    font-family: 'mainfont';
+
+    animation: colorlight infinite 3s ease alternate-reverse;
+    
+
+}
+
+.arrow{
+    
+    margin-left: 33%;
+
+    /* transform: translateY(-90px); */
+}
+
+/*-----------------------TEXTO--------------------*/
+
+.text{
+    font-size: 30px;
+
+    padding: 50px 90px 100px 90px;
+
+    background-color: #fff;
+
+    transform: translateY(20px);
+
+    
+}
+
+
+
+
+/*--------------------IMAGES-------------------*/
+
+.images{
+    display: flex;
+    justify-content: center;
+
+    /* background-color: #fff; */
+
+    
+    
+    margin: 30px;
+    padding: 90px;
+}
+
+.image{
+    transform: translateZ(-10deg);
+
+    transition: 1.2s;
+
+    box-shadow: 1px 1px 100px white;
+
+    animation: carrossel infinite alternate-reverse 3s ;
+
+    
+
+    /* border-radius: px; */
+}
+
+/* .image:nth-child(1):hover{
+    transform: translateZ(0deg) translateX(80px) scale(120%);
+}
+
+/* .image:nth-child(2):hover{
+    transform: translateZ(0deg) scale(120%);
+} */
+
+/* .image:nth-child(3):hover{
+    transform: translateZ(0deg) translateX(-80px) scale(120%);
+} */
+
+/*-------------------VIDEO------------------*/
+
+
+.video{
+    background-image: url(https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?cs=srgb&dl=pexels-markus-spiske-2004161.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    margin: 100px;
+
+    width: 860px;
+    height: 480px;
+
+    animation: movevement 3s infinite alternate-reverse ease;
+    
+
+}
+
+
+/*--------------FOOTER---------------*/
+
+footer{
+    background-color: #000;
+    height: 350px;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input{
+    margin: 20px;
+
+    width: 100px;
+    height: 50px;
+
+    border-radius: 20px;
+
+    font-size: 20px;
+}
+
+input:hover{
+    background-color: #FFDE59;
+}
+
+footer a{
+    color: #fff;
+}
+
+i{
+    font-size: 50px;
+}
+
+i:hover{
+    color: #FFDE59;
+}
+
+/*-------------------------------------------------*/
+
+
+@keyframes colorlight {
+    from{
+        color: #fff;
+    }
+
+    to{
+        color: #FFDE59;
+    }
+}
+
+@keyframes movevement {
+    from{
+        transform: translateY(20px);
+        
+    }
+
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes carrossel {
+    from{
+        transform: translateX(10px)
+    }
+
+    to{
+        transform: translateX(-10px);
+    }
+}
+
+
+@media all and (max-width: 760px) {
+    header{
+        background-color: #000;
+        height: 100px;
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header .logo{
+        transition: 1s;
+    
+        width: 50px;
+
+        border-radius: 50px;
+    }
+    
+    header .logo:hover{
+        box-shadow: 5px 1px 10px #FFDE59;
+    }
+    
+    header a{
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+    
+        font-family: 'mainfont';
+    
+        transition: 1s;
+    }
+    
+    header a:hover{
+        color: #FFDE59;
+    
+        
+    }
+    
+
+    h1{
+        font-size: 30px;
+    
+        margin: 40px 0px 0px 20px;
+    
+        font-family: 'mainfont';
+    
+        animation: colorlight infinite 3s ease alternate-reverse;
+        
+    
+    }
+    
+    .arrow{
+        
+
+        width: 150px;
+    
+        
+    }
+
+    
+
+    .text{
+        font-size: 20px;
+    
+        padding: 10px 15px 100px 15px;
+    
+        background-color: #fff;
+    
+        transform: translateY(20px);
+
+        
+    
+        
+    }
+    
+       
+    
+    
+
+   
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: space-around;
+
+        margin: 0;
+
+
+        background-color: #fff;
+
+        
+    }
+
+    .image{
+
+        width: auto;
+
+        
+        width: 400px;
+        
+
+        box-shadow: 1px 1px 100px white;
+
+        animation: carrossel;
+
+        position: absolute;
+
+        left: 50%;
+        transform: translate(-50%);
+
+
+        
+
+        
+    }
+
+    
+
+    iframe{
+        width: 700px;
+        height: 200px;
+
+        margin: 120px 10px 90px 10px;
+    }
+}
